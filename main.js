@@ -14,7 +14,7 @@
  *     - removeMaxNumberFromArray関数を実行した後の配列numbersの内容は [10, 500, 234, 965, 221] のままである
  */
 const removeMaxNumberFromArray = (_numbers) => {
-    const copiedNumbers = _numbers.splice();
+    const copiedNumbers = _numbers.slice();
     let indexOfMaxNumber = 0;
     let currentMaxNumber;
     copiedNumbers.forEach((number, index) => {
@@ -55,7 +55,7 @@ console.log('removeMaxNumberFromArrayの内容は[10, 500, 234, 221]', returnedN
  *       - https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
  */
 const sortNumbers = (numbers) => {
-    const copiedNumbers = numbers.splice();
+    const copiedNumbers = numbers.slice();
     copiedNumbers.sort((a, b) => {
         if (a < b) {
             return -1;
