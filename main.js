@@ -32,8 +32,8 @@ const removeMaxNumberFromArray = (_numbers) => {
 const numbers = [10, 500, 234, 221];
 const returnedNumbers = removeMaxNumberFromArray(numbers);
 
-console.log('numbersの内容は[10, 500, 234, 965, 221]', numbers);
-console.log('removeMaxNumberFromArrayの内容は[10, 500, 234, 221]', returnedNumbers);
+console.log('numbersの内容は[10, 500, 234, 221]', numbers);
+console.log('removeMaxNumberFromArrayの内容は[10, 234, 221]', returnedNumbers);
 
 
 /**
